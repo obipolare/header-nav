@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>nav-bar</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <figure class="branding">
+          <img
+            class="branding__img"
+            src="./logo.png"
+            alt="logo de attack on titan"
+          />
+        </figure>
+        <ul class="main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Inicio</a>
+            <ul class="submain-menu">
+              <li class="submain-menu__item">Hello world</li>
+              <li class="submain-menu__item">Hello world</li>
+              <li class="submain-menu__item">Hello world</li>
+              <li class="submain-menu__item">Hello world</li>
+            </ul>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Personajes</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Titanes</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Curiosidades</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- <form id="form">
+        <h2 style="color: white">Hello search your hero!</h2>
+        <input id="input" type="text" />
+      </form>
+      <section id="section"></section> -->
+      <section class="slider">
+        <scroll-container class="slider-container">
+          <scroll-page id="video-1">
+            <iframe
+              width="560"
+              height="315"
+              class="video"
+              src="https://www.youtube.com/embed/zbKMZ3nHkRw"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </scroll-page>
+
+          <scroll-page id="video-2">
+            <iframe
+              width="560"
+              height="315"
+              class="video"
+              src="https://www.youtube.com/embed/rJS4YuS22Og"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </scroll-page>
+          <scroll-page id="video-3">
+            <iframe
+              width="560"
+              height="315"
+              class="video"
+              src="https://www.youtube.com/embed/hl7_pm4lnP0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </scroll-page>
+        </scroll-container>
+        <div class="slider-bullet-list">
+          <a href="#video-1" class="slider-bullet"></a>
+          <a href="#video-2" class="slider-bullet"></a>
+          <a href="#video-3" class="slider-bullet"></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <acronym title="programming language">Javascript</acronym>
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

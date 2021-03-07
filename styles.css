@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Kanit-regular";
+  src: url("./fonts/Kanit-regular.ttf");
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-header {
+  width: 100%;
+  border: 0.1rem solid black;
+  background-color: #eee;
+}
+.branding__img {
+  width: 19rem;
+}
+.main-nav {
+  /* border: 0.1rem solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 8rem;
+}
+.main-menu {
+  display: flex;
+}
+.main-menu__item {
+  padding: 1rem;
+  list-style: none;
+  position: relative;
+}
+.main-menu__link {
+  text-decoration: none;
+  font-family: "Kanit-regular";
+  color: #000;
+  font-size: 1.7rem;
+}
+main {
+  color: azure;
+  font-size: 2rem;
+}
+
+.submain-menu {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 0.6rem;
+  background-color: #000;
+  color: azure;
+  padding-left: 0;
+  min-width: 12rem;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.submain-menu__item {
+  list-style: none;
+  padding: 1rem;
+  border: 0.1rem solid white;
+}
+
+.main-menu__item:hover .submain-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*slider */
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider {
+  padding: 3rem;
+}
+.slider-container {
+  display: block;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+  /* margin-top: 10px; */
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: white;
+  border-radius: 50%;
+}
